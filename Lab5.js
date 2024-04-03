@@ -164,7 +164,5 @@ const Lab5 = (app) => {
       todo.completed = req.body.completed;
       res.sendStatus(200);
     });
-  
-
   };
   export default Lab5;
