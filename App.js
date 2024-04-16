@@ -18,7 +18,6 @@ const branches = ["main", "a5", "a6", "project"];
 const strippedNetlifyUrl = process.env.NETLIFY_URL.replace("https://", "")
 const allowedOrigins = [process.env.FRONTEND_URL, ...branches.map((branch) => `https://${branch}--${strippedNetlifyUrl}`)];
 
-console.log(allowedOrigins);
 app.use(cors({
   credentials: true,
   origin: (origin, callback) => {
